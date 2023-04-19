@@ -13,6 +13,8 @@ const arrList = [
 ];
 
 const eleList = document.querySelector('#list');
+const pushHTML = document.querySelector('.add-button');
+const emptyInput = document.getElementById('element')
 
 
 /* soluzione con il ciclo for
@@ -30,3 +32,15 @@ while ( i < arrList.length) {
 	eleList.innerHTML += `<li>${arrList[i]}</li>`;
 	i++; 
 }
+
+
+
+pushHTML.addEventListener('click',
+	
+	function() {
+	eleList.innerHTML += `<li>${document.getElementById('element').value}</li>`;
+	emptyInput.value = (' ');
+
+	
+
+})
